@@ -2,6 +2,6 @@ services:
   - type: web
     name: lucky-panel
     runtime: static
-    buildCommand: "true"
-    staticPublishPath: .
+    buildCommand: "mkdir -p dist && cp index.html dist/index.html"
+    staticPublishPath: ./dist
     autoDeploy: true
